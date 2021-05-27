@@ -22,6 +22,8 @@ sammy.setProperty('volume', 0.7)
 
 # the assistant speak function
 def speak(audio):
+    x = open('report.txt', 'a')
+    print(f"Jennifer: {audio}", file=x)
     print(f"Jennifer: {audio}")
     sammy.say(audio)
     sammy.runAndWait()
@@ -37,6 +39,8 @@ def take_command():
     try:
         print("Recognizing....")
         query = r.recognize_google(audio, language="en-US")
+        x = open('report.txt', 'a')
+        print(f"User: {query}", file=x)
         print(f"User: {query}")
     except Exception as e:
         print(f"Exception: {str(e)}")
@@ -58,16 +62,9 @@ def make_note(text1):
 
 # boot up (start up the programme)
 def boot_up():
-    # Internet Speed
-    # speed = speedtest.Speedtest()
-    # downloading = speed.download()
-    # correct_down = int(downloading / 800000)
-    # uploading = speed.upload()
-    # correct_upload = int(uploading / 800000)
-
     speak("welcome back sir!")
-    speak("Allow me to introduce myself, I am Jennifer, your virtual artificial intelligence Assistant."
-          "\nAnd I am here to assist you with variety of tasks as best as I can. 24 hours a day, 7"
+    speak("Allow me to introduce myself, I am Jennifer, your virtual artificial intelligence Assistant.")
+    speak("And I am here to assist you with variety of tasks as best as I can. 24 hours a day, 7"
           " days a week.")
     speak("Starting all systems applications")
     speak("Installing and checking all drivers")
@@ -77,8 +74,6 @@ def boot_up():
     speak("All drivers are up and running")
     speak("All systems have been activated")
     speak("Now I am online")
-    # speak(f"The uploading speed is currently {correct_upload} mbps and the "
-    #       f"downloading speed is currently {correct_down} mbps.")
 
 
 # start up (greet me)
@@ -114,8 +109,10 @@ def start_up():
     else:
         speak("Good night")
 
-    speak(f"Jennifer at your service.\nThe date is {c_day} the {c_date}, and the time is currently {c_time}. "
-          f"The temperature is {temp}, {total_weather}.\nPlease tell me how can I help you sir?")
+    speak(f"Jennifer at your service.")
+    speak(f"The date is {c_day} the {c_date}, and the time is currently {c_time}.")
+    speak(f"The temperature is {temp}, {total_weather}.")
+    speak("Please tell me how can I help you sir?")
 
 
 # function for closing the assistant

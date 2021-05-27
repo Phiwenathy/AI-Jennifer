@@ -10,7 +10,7 @@ import pathlib
 from Functions import *
 
 
-if __name__ == "__main__":
+def task_execution():
     start_up()
     while True:
         query = take_command()
