@@ -1,0 +1,112 @@
+{
+"intents": [
+  {"tag": "greeting",
+  "patterns": [
+    "how are you", "how’s everything", "how is everything", "how’s it going", "how are things",
+    "you all right", "What’s new", "what’s up", "how are you doing", "how have you been", "how are things going",
+    "are you well"
+  ],
+  "responses": ["Hello sir, I’m fine, thank you. how about you?", "Hello sir, I’m good. how have you been?",
+    "Hello sir, pretty good, how are things going?", "Hello sir, I’m well. what's up?",
+    "Hello sir, all right. you all right sir?", "Hello sir, not too bad. How's it going on your side?",
+    "Hello sir, Same old, same old. what's new?"]},
+
+  {"tag": "create_note",
+  "patterns": ["make a note", "write this down", "create a new note", "create a note", "i want to create a note"],
+  "responses": ["What would you like me to write down?", "What do you want me to remember sir?",
+    "What should I write on this note?"]},
+
+  {"tag": "exit",
+  "patterns": ["offline", "goodbye", "go to sleep", "you can sleep", "stop", "Bye", "quit", "I want to quit",
+  "I have to go", "I want to exit"],
+  "responses": []},
+
+  {"tag": "screenshot",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "open_apps",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "close_apps",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "temperature",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "time",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "date",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "speed_test",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "email",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "music",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "whatsapp",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "audiobook",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "remind_me",
+  "patterns": ["I want to add a todo", "remember this", "remember that", "add a new todo", "new item on my todo list"],
+  "responses": []},
+
+  {"tag": "reminder",
+  "patterns": ["show my todo", "what do you remember", "what are my todos", "what is on my todo"],
+  "responses": []},
+
+  {"tag": "chrome_auto",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "wikipedia",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "self_awareness",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "google",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "gratitude",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "jokes",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "window_switch",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "jokes",
+  "patterns": [],
+  "responses": []},
+
+  {"tag": "video_download",
+  "patterns": [],
+  "responses": []}
+]
+}

@@ -12,6 +12,11 @@ from bs4 import BeautifulSoup  # pip install beautifulsoup4
 import speech_recognition as sr  # pip install SpeechRecognition
 import PyPDF2  # pip install PyPDF2
 from keyboard import *  # pip install keyboard
+from neuralintents import GenericAssistant  # pip install neuralintents
+import sys
+
+# https://youtu.be/SXsyLdKkKX0 : Intelligent Voice Assistant in Python
+# https://youtu.be/1lwddP0KUEg : Intelligent AI Chatbot in Python (do this one)
 
 sammy = pyttsx3.init()
 voices = sammy.getProperty('voices')
@@ -87,7 +92,6 @@ def start_up():
     temp = data.find("div", attrs={"class": "BNeawe iBp4i AP7Wnd"}).text
     timer_1 = data.find("div", attrs={"class": "BNeawe tAd8D AP7Wnd"}).text
     lyst = timer_1.split()
-    print(lyst)
     weather1 = lyst[2:]
     total_weather = ' '.join([str(item) for item in weather1]).lower()
 
@@ -739,3 +743,8 @@ def remind_me():
     speak("You said I should remember: " + data)
     remember.write(data)
     remember.close()
+
+
+def show_todo():
+    remember = open("data.txt", "r")
+    speak("You said I should remember: " + remember.read())

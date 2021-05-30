@@ -391,8 +391,7 @@ def task_execution():
             remind_me()
 
         elif "do you remember anything" in query:
-            remember = open("data.txt", "r")
-            speak("You said I should remember: " + remember.read())
+            show_todo()
 
         elif 'battery' in query:
             battery = psutil.sensors_battery().percent

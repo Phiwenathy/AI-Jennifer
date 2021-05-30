@@ -8,7 +8,7 @@ class UiJenniferWindow(object):
         jennifer_window.setObjectName("Sam_Window")
         jennifer_window.setGeometry(98, 50, 1810, 1020)
         jennifer_window.setWindowTitle('John Virtual Artificial Intelligence')
-        jennifer_window.setWindowIcon(QIcon('../photos/Picture9.png'))
+        jennifer_window.setWindowIcon(QIcon('../photos/jennifer ui/Icon.png'))
         self.centralwidget = QtWidgets.QWidget(jennifer_window)
         self.centralwidget.setObjectName("centralwidget")
 
@@ -19,27 +19,24 @@ class UiJenniferWindow(object):
         # background label
         self.background_label = QtWidgets.QLabel(self.centralwidget)
         self.background_label.setGeometry(QtCore.QRect(0, 0, 1810, 1020))
-        self.background_label.setText("")
         self.background_label.setPixmap(QtGui.QPixmap(
-            "../photos/abstract-frame-technology-futuristic-interface-hud-vector.jpg"))
+            "../photos/jennifer ui/background-image.jpg"))
         self.background_label.setScaledContents(True)
         self.background_label.setObjectName("background_label")
 
         # loading label
         self.loading_label = QtWidgets.QLabel(self.centralwidget)
         self.loading_label.setGeometry(QtCore.QRect(0, 175, 310, 100))
-        self.loading_label.setText("")
-        self.loading_label.setPixmap(QtGui.QPixmap("../photos/load.gif"))
+        self.loading_label.setPixmap(QtGui.QPixmap("../photos/jennifer ui/load.gif"))
         self.loading_label.setScaledContents(True)
         self.loading_label.setObjectName("loading_label")
-        self.loading_movie = QMovie('../photos/load.gif')
+        self.loading_movie = QMovie('../photos/jennifer ui/load.gif')
         self.loading_label.setMovie(self.loading_movie)
 
         # date info
         self.date_label = QtWidgets.QLabel(self.centralwidget)
         self.date_label.setGeometry(QtCore.QRect(10, 70, 300, 100))
-        self.date_label.setText("")
-        self.date_label.setPixmap(QtGui.QPixmap("../photos/element.jpg"))
+        self.date_label.setPixmap(QtGui.QPixmap("../photos/jennifer ui/element.jpg"))
         self.date_label.setScaledContents(True)
         self.date_label.setObjectName("date_label")
 
@@ -59,8 +56,7 @@ class UiJenniferWindow(object):
         # time info
         self.time_label = QtWidgets.QLabel(self.centralwidget)
         self.time_label.setGeometry(QtCore.QRect(10, 280, 300, 100))
-        self.time_label.setText("")
-        self.time_label.setPixmap(QtGui.QPixmap("../photos/element.jpg"))
+        self.time_label.setPixmap(QtGui.QPixmap("../photos/jennifer ui/element.jpg"))
         self.time_label.setScaledContents(True)
         self.time_label.setObjectName("time_label")
 
@@ -80,8 +76,7 @@ class UiJenniferWindow(object):
         # temperature info
         self.temperature_label = QtWidgets.QLabel(self.centralwidget)
         self.temperature_label.setGeometry(QtCore.QRect(10, 390, 300, 100))
-        self.temperature_label.setText("")
-        self.temperature_label.setPixmap(QtGui.QPixmap("../photos/element.jpg"))
+        self.temperature_label.setPixmap(QtGui.QPixmap("../photos/jennifer ui/element.jpg"))
         self.temperature_label.setScaledContents(True)
         self.temperature_label.setObjectName("temperature_label")
 
@@ -101,18 +96,17 @@ class UiJenniferWindow(object):
         # voice label
         self.voice_label = QtWidgets.QLabel(self.centralwidget)
         self.voice_label.setGeometry(QtCore.QRect(10, 520, 300, 200))
-        self.voice_label.setText("")
-        self.voice_label.setPixmap(QtGui.QPixmap("../photos/Aqua.gif"))
+        self.voice_label.setPixmap(QtGui.QPixmap("../photos/jennifer ui/voice.gif"))
         self.voice_label.setScaledContents(True)
         self.voice_label.setObjectName("voice_label")
-        self.voice_movie = QMovie('../photos/Aqua.gif')
+        self.voice_movie = QMovie('../photos/jennifer ui/voice.gif')
         self.voice_label.setMovie(self.voice_movie)
 
         # apps info
         self.teams_button = QtWidgets.QPushButton(self.centralwidget)
         self.teams_button.setGeometry(QtCore.QRect(340, 90, 105, 105))
         self.teams_button.setStyleSheet(
-            "background-image: url(../photos/Picture1.png);\nborder:none;"
+            "background-image: url(../photos/jennifer ui/teams.png);\nborder:none;"
             "\nbackground-repeat: no-repeat;")
         self.teams_button.setText("")
         self.teams_button.setObjectName("teams_button")
@@ -120,7 +114,7 @@ class UiJenniferWindow(object):
         self.cmd_button = QtWidgets.QPushButton(self.centralwidget)
         self.cmd_button.setGeometry(QtCore.QRect(340, 210, 105, 105))
         self.cmd_button.setStyleSheet(
-            "background-image: url(../photos/cmd.png);\nbackground-size: cover;"
+            "background-image: url(../photos/jennifer ui/cmd.png);\nbackground-size: cover;"
             "\nbackground-repeat: no-repeat;\nborder: none;")
         self.cmd_button.setText("")
         self.cmd_button.setObjectName("cmd_button")
@@ -128,7 +122,7 @@ class UiJenniferWindow(object):
         self.word_button = QtWidgets.QPushButton(self.centralwidget)
         self.word_button.setGeometry(QtCore.QRect(340, 330, 105, 105))
         self.word_button.setStyleSheet(
-            "background-image: url(../photos/Picture4.png);\nbackground-size: cover;"
+            "background-image: url(../photos/jennifer ui/word.png);\nbackground-size: cover;"
             "\nbackground-repeat: no-repeat;\nborder: none;")
         self.word_button.setText("")
         self.word_button.setObjectName("word_button")
@@ -136,7 +130,7 @@ class UiJenniferWindow(object):
         self.powerpoint_button = QtWidgets.QPushButton(self.centralwidget)
         self.powerpoint_button.setGeometry(QtCore.QRect(340, 450, 105, 105))
         self.powerpoint_button.setStyleSheet(
-            "background-image: url(../photos/Picture8.png);\nbackground-size: cover;"
+            "background-image: url(../photos/jennifer ui/powerpoint.png);\nbackground-size: cover;"
             "\nbackground-repeat: no-repeat;\nborder: none;")
         self.powerpoint_button.setText("")
         self.powerpoint_button.setObjectName("powerpoint_button")
@@ -144,7 +138,7 @@ class UiJenniferWindow(object):
         self.notepadplus_button = QtWidgets.QPushButton(self.centralwidget)
         self.notepadplus_button.setGeometry(QtCore.QRect(340, 570, 105, 105))
         self.notepadplus_button.setStyleSheet(
-            "background-image: url(../photos/Picture5.png);\nbackground-size: cover;"
+            "background-image: url(../photos/jennifer ui/notepad_plus.png);\nbackground-size: cover;"
             "\nbackground-repeat: no-repeat;\nborder: none;")
         self.notepadplus_button.setText("")
         self.notepadplus_button.setObjectName("notepadplus_button")
@@ -152,7 +146,7 @@ class UiJenniferWindow(object):
         self.snip_tool_button = QtWidgets.QPushButton(self.centralwidget)
         self.snip_tool_button.setGeometry(QtCore.QRect(290, 690, 105, 105))
         self.snip_tool_button.setStyleSheet(
-            "background-image: url(../photos/edge2.jpg);\nbackground-size: cover;"
+            "background-image: url(../photos/jennifer ui/edge.jpg);\nbackground-size: cover;"
             "\nbackground-repeat: no-repeat;\nborder: none;")
         self.snip_tool_button.setText("")
         self.snip_tool_button.setObjectName("snip_tool_button")
@@ -160,7 +154,7 @@ class UiJenniferWindow(object):
         self.excel_button = QtWidgets.QPushButton(self.centralwidget)
         self.excel_button.setGeometry(QtCore.QRect(500, 90, 105, 105))
         self.excel_button.setStyleSheet(
-            "background-image: url(../photos/Picture7.png);\nbackground-size: cover;"
+            "background-image: url(../photos/jennifer ui/excel.png);\nbackground-size: cover;"
             "\nbackground-repeat: no-repeat;\nborder: none;")
         self.excel_button.setText("")
         self.excel_button.setObjectName("excel_button")
@@ -168,7 +162,7 @@ class UiJenniferWindow(object):
         self.youtube_button = QtWidgets.QPushButton(self.centralwidget)
         self.youtube_button.setGeometry(QtCore.QRect(500, 210, 105, 105))
         self.youtube_button.setStyleSheet(
-            "background-image: url(../photos/youtube1.png);\nbackground-size: cover;"
+            "background-image: url(../photos/jennifer ui/youtube.png);\nbackground-size: cover;"
             "\nbackground-repeat: no-repeat;\nborder: none;")
         self.youtube_button.setText("")
         self.youtube_button.setObjectName("youtube_button")
@@ -176,7 +170,7 @@ class UiJenniferWindow(object):
         self.telegram_button = QtWidgets.QPushButton(self.centralwidget)
         self.telegram_button.setGeometry(QtCore.QRect(500, 330, 105, 105))
         self.telegram_button.setStyleSheet(
-            "background-image: url(../photos/telegram.png);\nbackground-size: cover;"
+            "background-image: url(../photos/jennifer ui/telegram.png);\nbackground-size: cover;"
             "\nbackground-repeat: no-repeat;\nborder: none;")
         self.telegram_button.setText("")
         self.telegram_button.setObjectName("telegram_button")
@@ -185,7 +179,7 @@ class UiJenniferWindow(object):
         self.pycharm_button = QtWidgets.QPushButton(self.centralwidget)
         self.pycharm_button.setGeometry(QtCore.QRect(500, 450, 105, 105))
         self.pycharm_button.setStyleSheet(
-            "background-image: url(../photos/py.jpg);\nbackground-size: cover;"
+            "background-image: url(../photos/jennifer ui/pycharm.jpg);\nbackground-size: cover;"
             "\nbackground-repeat: no-repeat;\nborder: none;")
         self.pycharm_button.setText("")
         self.pycharm_button.setObjectName("pycharm_button")
@@ -195,20 +189,20 @@ class UiJenniferWindow(object):
         self.lara2_label.setGeometry(QtCore.QRect(630, 170, 250, 400))
         self.lara2_label.setText("")
         self.lara2_label.setPixmap(QtGui.QPixmap(
-            "../photos/lara2.gif"))
+            "../photos/jennifer ui/lara2.gif"))
         self.lara2_label.setScaledContents(True)
         self.lara2_label.setObjectName("lara2_label")
-        self.lara2_movie = QMovie('../photos/lara2.gif')
+        self.lara2_movie = QMovie('../photos/jennifer ui/lara2.gif')
         self.lara2_label.setMovie(self.lara2_movie)
 
         # jennifer label
         self.jennifer_label = QtWidgets.QLabel(self.centralwidget)
         self.jennifer_label.setGeometry(QtCore.QRect(890, 170, 250, 400))
         self.jennifer_label.setText("")
-        self.jennifer_label.setPixmap(QtGui.QPixmap("../photos/animal.gif"))
+        self.jennifer_label.setPixmap(QtGui.QPixmap("../photos/jennifer ui/anime.gif"))
         self.jennifer_label.setScaledContents(True)
         self.jennifer_label.setObjectName("jennifer_label")
-        self.jennifer_movie = QMovie('../photos/animal.gif')
+        self.jennifer_movie = QMovie('../photos/jennifer ui/anime.gif')
         self.jennifer_label.setMovie(self.jennifer_movie)
 
         self.jennifer_value = QtWidgets.QLabel(self.centralwidget)
@@ -230,35 +224,34 @@ class UiJenniferWindow(object):
         self.lara3_label.setGeometry(QtCore.QRect(1150, 170, 250, 400))
         self.lara3_label.setText("")
         self.lara3_label.setPixmap(QtGui.QPixmap(
-            "../photos/lara3.gif"))
+            "../photos/jennifer ui/lara3.gif"))
         self.lara3_label.setScaledContents(True)
         self.lara3_label.setObjectName("lara3_label")
-        self.lara3_movie = QMovie('../photos/lara3.gif')
+        self.lara3_movie = QMovie('../photos/jennifer ui/lara3.gif')
         self.lara3_label.setMovie(self.lara3_movie)
 
-        # Ironman rotating
+        # lara rotating
         self.ironman_label = QtWidgets.QLabel(self.centralwidget)
         self.ironman_label.setGeometry(QtCore.QRect(1550, 370, 250, 400))
         self.ironman_label.setText("")
         self.ironman_label.setPixmap(QtGui.QPixmap(
-            "../photos/lara4.gif"))
+            "../photos/jennifer ui/lara4.gif"))
         self.ironman_label.setScaledContents(True)
         self.ironman_label.setObjectName("ironman_label")
-        self.ironman_movie = QMovie('../photos/lara4.gif')
+        self.ironman_movie = QMovie('../photos/jennifer ui/lara4.gif')
         self.ironman_label.setMovie(self.ironman_movie)
 
         # Battery Info
         self.battery_label = QtWidgets.QLabel(self.centralwidget)
         self.battery_label.setGeometry(QtCore.QRect(600, 70, 300, 100))
         self.battery_label.setPixmap(QtGui.QPixmap(
-            "../photos/—Pngtree—futuristic display frame gaming_5745334.png"))
+            "../photos/jennifer ui/element2.png"))
         self.battery_label.setScaledContents(True)
         self.battery_label.setObjectName("battery_label")
 
         self.battery_value = QtWidgets.QLabel(self.centralwidget)
         self.battery_value.setGeometry(QtCore.QRect(650, 100, 201, 31))
         self.battery_value.setStyleSheet("color: #00BFFF;background-color:transparent;")
-        # self.battery_value.setGraphicsEffect(shadow_effect)
         font = QtGui.QFont()
         font.setPointSize(8)
         font.setBold(True)
@@ -273,7 +266,7 @@ class UiJenniferWindow(object):
         self.swap_label.setGeometry(QtCore.QRect(850, 70, 300, 100))
         self.swap_label.setText("")
         self.swap_label.setPixmap(QtGui.QPixmap(
-            "../photos/—Pngtree—futuristic display frame gaming_5745334.png"))
+            "../photos/jennifer ui/element2.png"))
         self.swap_label.setScaledContents(True)
         self.swap_label.setObjectName("swap_label")
 
@@ -289,14 +282,13 @@ class UiJenniferWindow(object):
         self.swap_value.setObjectName("swap_value")
         font.setPointSize(8)
         self.swap_value.setStyleSheet("color: #00BFFF;background-color:transparent;")
-        # self.swap_value.setGraphicsEffect(shadow_effect)
 
         # Ram percentage info
         self.ram_label = QtWidgets.QLabel(self.centralwidget)
         self.ram_label.setGeometry(QtCore.QRect(1100, 70, 300, 100))
         self.ram_label.setText("")
         self.ram_label.setPixmap(QtGui.QPixmap(
-            "../photos/—Pngtree—futuristic display frame gaming_5745334.png"))
+            "../photos/jennifer ui/element2.png"))
         self.ram_label.setScaledContents(True)
         self.ram_label.setObjectName("ram_label")
 
@@ -309,24 +301,22 @@ class UiJenniferWindow(object):
         self.ram_value.setText("")
         self.ram_value.setAlignment(QtCore.Qt.AlignCenter)
         self.ram_value.setWordWrap(True)
-        self.ram_value.setObjectName("../ram_value")
+        self.ram_value.setObjectName("ram_value")
         font.setPointSize(8)
         self.ram_value.setStyleSheet("color: #00BFFF;background-color:transparent;")
-        # self.ram_value.setGraphicsEffect(shadow_effect)
 
         # CPU percentage info
         self.cpu_label = QtWidgets.QLabel(self.centralwidget)
         self.cpu_label.setGeometry(QtCore.QRect(1350, 70, 300, 100))
         self.cpu_label.setText("")
         self.cpu_label.setPixmap(QtGui.QPixmap(
-            "../photos/—Pngtree—futuristic display frame gaming_5745334.png"))
+            "../photos/jennifer ui/element2.png"))
         self.cpu_label.setScaledContents(True)
         self.cpu_label.setObjectName("cpu_label")
 
         self.cpu_value = QtWidgets.QLabel(self.centralwidget)
         self.cpu_value.setGeometry(QtCore.QRect(1400, 100, 201, 31))
         self.cpu_value.setStyleSheet("color: #00BFFF;background-color:transparent;")
-        # self.cpu_value.setGraphicsEffect(shadow_effect)
         font = QtGui.QFont()
         font.setPointSize(8)
         font.setBold(True)
@@ -340,7 +330,7 @@ class UiJenniferWindow(object):
         self.start_button = QtWidgets.QPushButton(self.centralwidget)
         self.start_button.setGeometry(QtCore.QRect(685, 910, 100, 100))
         self.start_button.setStyleSheet(
-            "background-image: url(../photos/Startb.png);\nborder:none;"
+            "background-image: url(../photos/jennifer ui/startbutton.png);\nborder:none;"
             "\nbackground-repeat: no-repeat;")
         self.start_button.setText("")
         self.start_button.setObjectName("start_button")
@@ -349,7 +339,7 @@ class UiJenniferWindow(object):
         self.pause_button = QtWidgets.QPushButton(self.centralwidget)
         self.pause_button.setGeometry(QtCore.QRect(850, 910, 100, 100))
         self.pause_button.setStyleSheet(
-            "background-image: url(../photos/pauseb.png);\nborder:none;"
+            "background-image: url(../photos/jennifer ui/pausebutton.png);\nborder:none;"
             "\nbackground-repeat: no-repeat;")
         self.pause_button.setText("")
         self.pause_button.setObjectName("pause_button")
@@ -358,7 +348,7 @@ class UiJenniferWindow(object):
         self.stop_button = QtWidgets.QPushButton(self.centralwidget)
         self.stop_button.setGeometry(QtCore.QRect(1030, 915, 100, 100))
         self.stop_button.setStyleSheet(
-            "background-image: url(../photos/stopt.png);\nborder:none;"
+            "background-image: url(../photos/jennifer ui/stopbutton.png);\nborder:none;"
             "\nbackground-repeat: no-repeat;")
         self.stop_button.setText("")
         self.stop_button.setObjectName("stop_button")
@@ -366,7 +356,7 @@ class UiJenniferWindow(object):
         # download speed info
         self.download_label = QtWidgets.QLabel(self.centralwidget)
         self.download_label.setGeometry(QtCore.QRect(490, 670, 70, 70))
-        self.download_label.setPixmap(QtGui.QPixmap("../photos/download.png"))
+        self.download_label.setPixmap(QtGui.QPixmap("../photos/jennifer ui/download.png"))
         self.download_label.setScaledContents(True)
         self.download_label.setObjectName("download_label")
 
@@ -385,7 +375,7 @@ class UiJenniferWindow(object):
         # upload speed info
         self.upload_label = QtWidgets.QLabel(self.centralwidget)
         self.upload_label.setGeometry(QtCore.QRect(1150, 670, 70, 70))
-        self.upload_label.setPixmap(QtGui.QPixmap("../photos/up.png"))
+        self.upload_label.setPixmap(QtGui.QPixmap("../photos/jennifer ui/upload.png"))
         self.upload_label.setScaledContents(True)
         self.upload_label.setObjectName("upload_label")
 
@@ -406,7 +396,7 @@ class UiJenniferWindow(object):
         self.ram_space_label = QtWidgets.QLabel(self.centralwidget)
         self.ram_space_label.setGeometry(QtCore.QRect(880, 710, 70, 70))
         self.ram_space_label.setText("")
-        self.ram_space_label.setPixmap(QtGui.QPixmap("../photos/Picture11.png"))
+        self.ram_space_label.setPixmap(QtGui.QPixmap("../photos/jennifer ui/ram.png"))
         self.ram_space_label.setScaledContents(True)
         self.ram_space_label.setObjectName("ram_space_label")
 
@@ -421,7 +411,6 @@ class UiJenniferWindow(object):
         self.space_used_value.setStyleSheet("color: #00BFFF;background-color:transparent;")
         self.space_used_value.setAlignment(QtCore.Qt.AlignCenter)
         self.space_used_value.setWordWrap(True)
-        # self.space_used_value.setGraphicsEffect(shadow_effect)
 
         self.free_space_value = QtWidgets.QLabel(self.centralwidget)
         self.free_space_value.setGeometry(QtCore.QRect(940, 710, 120, 50))
@@ -434,13 +423,12 @@ class UiJenniferWindow(object):
         self.free_space_value.setStyleSheet("color: #00BFFF;background-color:transparent;")
         self.free_space_value.setAlignment(QtCore.Qt.AlignCenter)
         self.free_space_value.setWordWrap(True)
-        # self.free_space_value.setGraphicsEffect(shadow_effect)
 
         # User info
         self.usercard_label = QtWidgets.QLabel(self.centralwidget)
         self.usercard_label.setGeometry(QtCore.QRect(1625, 70, 180, 300))
         self.usercard_label.setText("")
-        self.usercard_label.setPixmap(QtGui.QPixmap("../photos/card.jpg"))
+        self.usercard_label.setPixmap(QtGui.QPixmap("../photos/jennifer ui/card.jpg"))
         self.usercard_label.setScaledContents(True)
         self.usercard_label.setObjectName("usercard_label")
 
@@ -448,7 +436,7 @@ class UiJenniferWindow(object):
         self.user_value.setGeometry(QtCore.QRect(1665, 140, 100, 100))
         self.user_value.setText("")
         self.user_value.setPixmap(QtGui.QPixmap(
-            "../photos/photo_2021-05-15_21-49-08.jpg"))
+            "../photos/jennifer ui/my-profile.jpg"))
         self.user_value.setScaledContents(True)
         self.user_value.setObjectName("user_value")
 

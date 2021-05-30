@@ -2,6 +2,6 @@
 # Folders
 ../jen/
 __pycache__/
-../pywhatkit_dbs.txt
 pywhatkit_dbs.txt
 report.txt
+songs.pickle
